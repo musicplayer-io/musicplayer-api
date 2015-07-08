@@ -35,6 +35,6 @@ class MusicPlayerAPI
 
 module.exports = (token, url) ->
   if typeof token is "string"
-    return new MusicPlayerAPI token, url
+    return new MusicPlayerAPI token, (url or "http://reddit.musicplayer.io")
   else
     return new MusicPlayerAPI token.token, token.url
