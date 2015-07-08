@@ -104,3 +104,14 @@ MusicPlayerAPI.subreddits.post({
 ```
 
 ## Song
+
+* get : Gets information about the current song
+
+```
+MusicPlayerAPI.song.get(function(result) {
+  if (result.status == false) return console.error(result.message);
+
+  var song = result.data;
+  console.log("Current song title is " + song.title);
+})
+```
