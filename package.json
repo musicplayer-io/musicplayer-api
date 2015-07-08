@@ -1,6 +1,6 @@
 {
   "name": "musicplayer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "API for the Music Player",
   "main": "lib/musicplayer.js",
   "author": "Ilias Ismanalijev",

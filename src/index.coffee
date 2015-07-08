@@ -12,7 +12,7 @@ class APIRequest
 
   get: (cb) ->
     request.get "#{@url}/remote/#{@token}/#{@action}", @respond(cb)
-    
+
   post: (data, cb) ->
     if typeof data is "function"
       request.post "#{@url}/remote/#{@token}/#{@action}", @respond(data)
@@ -35,6 +35,6 @@ class MusicPlayerAPI
 
 module.exports = (token, url) ->
   if typeof token is "string"
-    return new MusicPlayerAPI token, (url or "http://reddit.musicplayer.io")
+    return new MusicPlayerAPI token, (url or "https://reddit.musicplayer.io")
   else
     return new MusicPlayerAPI token.token, token.url
