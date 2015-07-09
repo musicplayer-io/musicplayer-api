@@ -1,11 +1,16 @@
 {
   "name": "musicplayer",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "API for the Music Player",
   "main": "lib/musicplayer.js",
-  "author": "Ilias Ismanalijev",
+  "author": {
+    "name": "Ilias Ismanalijev",
+    "email": "hello@illyism.com",
+    "url": "http://il.ly"
+  },
   "license": "GPLv3",
   "dependencies": {
+    "musicplayer-cli": "*",
     "request": "^2.58.0"
   },
   "devDependencies": {
@@ -13,7 +18,10 @@
     "grunt-contrib-coffee": "^0.13.0"
   },
   "keywords": [
-    "api", "music", "player", "reddit"
+    "api",
+    "music",
+    "player",
+    "reddit"
   ],
   "homepage": "http://www.musicplayer.io",
   "bugs": {
@@ -23,9 +31,7 @@
     "type": "git",
     "url": "https://github.com/musicplayer-io/musicplayer-api.git"
   },
-  "author": {
-    "name": "Ilias Ismanalijev",
-    "email": "hello@illyism.com",
-    "url": "http://il.ly"
+  "bin": {
+    "musicplayer": "./bin/musicplayer"
   }
 }

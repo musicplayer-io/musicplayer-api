@@ -115,3 +115,8 @@ MusicPlayerAPI.song.get(function(result) {
   console.log("Current song title is " + song.title);
 })
 ```
+
+
+# CLI
+
+This module also contains a link to [musicplayer-cli](https://github.com/musicplayer-io/musicplayer-cli). Just in case someone installs the wrong module.
